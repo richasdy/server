@@ -72,8 +72,9 @@ docker run -d \
 fix by richasdy 
 ```
 docker run -d \
-    -p 3002:3002 \
+    -p 3002:1234 \
     --restart always \
     --name localtunnel \
-    localtunnel/server:latest --port 3002
+    --net host \
+    localtunnel/server:latest --port 1234
 ```
