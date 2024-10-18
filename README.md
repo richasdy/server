@@ -75,6 +75,5 @@ docker run -d \
     -p 3002:1234 \
     --restart always \
     --name localtunnel \
-    --net host \
     localtunnel/server:latest --port 1234
 ```
