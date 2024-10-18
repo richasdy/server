@@ -66,5 +66,14 @@ docker run -d \
     --restart always \
     --name localtunnel \
     --net host \
-    defunctzombie/localtunnel-server:latest --port 3000
+    localtunnel/server:latest --port 3001
+```
+
+fix by richasdy 
+```
+docker run -d \
+    -p 3002:3002 \
+    --restart always \
+    --name localtunnel \
+    localtunnel/server:latest --port 3002
 ```
